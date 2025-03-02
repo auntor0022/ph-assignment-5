@@ -29,7 +29,7 @@ taskCountElement.innerText = btnLength;
 
 for (const comBtn of completeBtn) {
     comBtn.addEventListener("click", function (event) {
-        alert("Board updated successfully");
+        alert("Board updated Successfully");
         const target = event.target;
         target.classList.remove("bg-[#3752FD]");
         target.classList.add("bg-gray-200");
@@ -43,7 +43,7 @@ for (const comBtn of completeBtn) {
         navTaskCount.innerText = convertedNavTask;
 
         if (btnLength === 0) {
-            alert("yess");
+            alert("Congrates!!! You have completed all the currnt task");
         }
 
         const titles = this.parentElement.parentElement.querySelector(".title").innerText;

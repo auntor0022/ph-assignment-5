@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blogs</title>
 
     <!-- DaisyUI and Tailwindcss CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
@@ -50,7 +50,7 @@
     </header>
 
     <main class="container mx-auto mt-6">
-        <section>
+        <section class="mb-6">
             <h1 class="text-center font-bold text-3xl">Blogs</h1>
 
             <div class="bg-white rounded mt-6">
@@ -58,33 +58,64 @@
                     <h1 class="font-medium text-xl">Question-1: What are the different ways to select an element in the
                         DOM?</h1>
                 </div>
-                <p class="p-3 font-light">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+                <p class="p-3 font-light">There are many ways to select an elements in the DOM. Here the some of the popular and 
+                    best way of select an elements in the DOM: 
+                    1. Select by TagName : getElementByTagName() , this method is used to 
+                    select a DOM element by tag name of an element. 
+                    2. Select by ID : getElementById() , this method is used to select a DOM 
+                    element by ID of an element. 
+                    3. Select by Class name : getElementsByClassName() , this method is 
+                    used to select a DOM element by class name of an element. 
+                    4. Select by CSS selector: querySelector() , this method is used to select a 
+                    DOM element by CSS selector of an element. 
+                    5. Multiple elements Select by CSS selector: querySelectorAll() , this 
+                    method is used to select multiple DOM element by CSS selector of an 
+                    element. </p>
             </div>
             <div class="bg-white rounded mt-6">
                 <div class="border-b border-dashed border-[#3752FD20] p-3">
                     <h1 class="font-medium text-xl">Question-2: What is the difference between innerHTML, innerText, and
                         textContent ?</h1>
                 </div>
-                <p class="p-3 font-light">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+                <p class="p-3 font-light">Difference between innerHTML, innerText, and textContent: 
+                    1. innerHTML: Returns or sets the HTML contained within an element, 
+                    including tags. 
+                    2. innerText: Gets or sets the text content of an element, excluding hidden 
+                    elements, taking CSS styles into account. 
+                    3. textContent: Gets or sets all text in an element, including hidden 
+                    elements, without any format. </p>
             </div>
             <div class="bg-white rounded mt-6">
                 <div class="border-b border-dashed border-[#3752FD20] p-3">
                     <h1 class="font-medium text-xl">Question-3: What is event delegation in the DOM?</h1>
                 </div>
-                <p class="p-3 font-light">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+                <p class="p-3 font-light">Event Delegation in the DOM is a technique where a parent element handles events of its 
+                    child elements on the basis of event bubbling. Instead of adding event listeners to each 
+                    child, a single listener is added to the parent, which is a performance improvement and 
+                    code maintainability 
+                    </p>
             </div>
             <div class="bg-white rounded mt-6">
                 <div class="border-b border-dashed border-[#3752FD20] p-3">
                     <h1 class="font-medium text-xl">Question-4: What is event bubbling in the DOM?</h1>
                 </div>
-                <p class="p-3 font-light">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+                <p class="p-3 font-light">Event Bubbling in the DOM occurs when an event starts at the target element and 
+                    propagates upwards to the parent elements until the root (document) is reached. It 
+                    moves from the innermost to the outermost. It makes parent elements listen to events 
+                    triggered by their child elements. </p>
             </div>
             <div class="bg-white rounded mt-6">
                 <div class="border-b border-dashed border-[#3752FD20] p-3">
                     <h1 class="font-medium text-xl">Question-5: How do you create, add, and remove elements using
                         JavaScript?</h1>
                 </div>
-                <p class="p-3 font-light">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+                <p class="p-3 font-light">Create, Add, and Remove Elements using JavaScript: 
+                    1. Create Element: 
+                    let div = document.createElement("div"); 
+                    2. Add Element: 
+                    parent.appendChild(div); 
+                    3. Remove Element: 
+                    div.remove();</p>
             </div>
         </section>
     </main>
