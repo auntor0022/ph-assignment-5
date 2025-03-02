@@ -35,7 +35,7 @@
     </style>
 </head>
 
-<body class="poppins-font bg-[#F4F7FF] pt-6">
+<body class="poppins-font bg-[#F4F7FF] pt-6" id="body">
     <header class="container mx-auto bg-white rounded-xl">
         <!-- navbar -->
         <nav class="flex justify-between items-center p-6">
@@ -46,10 +46,10 @@
             <div class="flex items-center space-x-9">
                 <div class="flex items-center bg-[#F4F7FF] space-x-2 p-3 rounded-full">
                     <img src="assets/checkbox.png" alt="">
-                    <h3 class="font-bold text-3xl">23</h3>
+                    <h3 id="count" class="font-bold text-3xl">23</h3>
                 </div>
-                <div class="bg-[#F4F7FF] p-3 rounded-full">
-                    <img src="assets/theme-btn.png" alt="">
+                <div id="themeBtn" class="bg-[#F4F7FF] p-3 rounded-full">
+                    <img src="assets/theme-btn.png" alt="" >
                 </div>
             </div>
         </nav>
@@ -63,14 +63,15 @@
                 <div class="flex justify-between items-center gap-6 border-b border-dashed border-[#3752FD20] pb-6">
                     <div class="flex items-center p-8 bg-[#F4F7FF] rounded-xl gap-5">
                         <div class="bg-white p-4 rounded-full">
-                            <img src="assets/checkbox.png" alt="" >
+                            <img src="assets/checkbox.png" alt="">
                         </div>
                         <div>
                             <h5 class="font-medium text-base text-[#00303C]">Task Assigned </h5>
-                            <h1 class="font-bold text-3xl">05</h1>
+                            <h1 id="task" class="font-bold text-3xl"></h1>
                         </div>
                     </div>
-                    <div class="flex items-center gap-6 py-5 pl-10 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl pr-20">
+                    <div id="anotherPage"
+                        class="flex items-center gap-6 py-5 pl-10 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl pr-20 cursor-pointer">
                         <div>
                             <img src="assets/board.png" alt="">
                         </div>
@@ -80,135 +81,144 @@
                         <div class="bg-white p-4 rounded-full">
                             <img src="assets/calender.png" alt="">
                         </div>
-                        <h3 class="font-normal text-xl">Wed , <br>
-                            <span class="font-bold">Jul 28 2025</span> </h3>
+                        <div>
+                            <h3 id="weekDay" class="font-normal text-xl"></h3>
+                            <span id="localTime" class="font-bold text-xl"></span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- cards -->
                 <div class="grid grid-cols-3 mt-6 gap-9">
                     <!-- card-1 -->
-                     <div class="p-6 rounded-xl bg-[#F4F7FF]">
-                        <div class="border-b border-dashed border-[#3752FD20] pb-3">
+                    <div class="p-6 rounded-xl bg-[#F4F7FF]">
+                       
                             <button class="btn mb-4 bg-white text-[#00303C]">ShopEase</button>
-                            <h1 class="mb-4 font-medium text-2xl">Fix Mobile Button Issue </h1>
+                            <h1 class="mb-4 font-medium text-2xl title">Fix Mobile Button Issue </h1>
                             <div class="bg-white p-4 rounded-xl text-base font-normal">
                                 <h1 class="opacity-50">Debug using Chrome DevTools, check for overlapping...</h1>
                             </div>
-                        </div>
+                        
                         <div class="flex pt-3 justify-between items-end">
                             <div>
                                 <p class="text-sm opacity-70 font-normal">Deadline</p>
                                 <h3 class="font-medium text-base text-[#00303C]">21 March 2025</h3>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button class="comBtn btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
-                     </div>
+                    </div>
 
                     <!-- card-2 -->
-                     <div class="p-6 rounded-xl bg-[#F4F7FF]">
-                        <div class="border-b border-dashed border-[#3752FD20] pb-3">
+                    <div class="p-6 rounded-xl bg-[#F4F7FF]">
+                        
                             <button class="btn mb-4 bg-white text-[#00303C]">CloudSync</button>
-                            <h1 class="mb-4 font-medium text-2xl">Add Dark Mode</h1>
+                            <h1 class="mb-4 font-medium text-2xl title">Add Dark Mode</h1>
                             <div class="bg-white p-4 rounded-xl text-base font-normal">
                                 <h1 class="opacity-50">Debug using Chrome DevTools, check for overlapping...</h1>
                             </div>
-                        </div>
+                        
                         <div class="flex pt-3 justify-between items-end">
                             <div>
                                 <p class="text-sm opacity-70 font-normal">Deadline</p>
                                 <h3 class="font-medium text-base text-[#00303C]">21 March 2025</h3>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button class="comBtn btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
-                     </div>
+                    </div>
 
                     <!-- card-3 -->
-                     <div class="p-6 rounded-xl bg-[#F4F7FF]">
-                        <div class="border-b border-dashed border-[#3752FD20] pb-3">
+                    <div class="p-6 rounded-xl bg-[#F4F7FF]">
+                        
                             <button class="btn mb-4 bg-white text-[#00303C]">SwiftPay</button>
-                            <h1 class="mb-4 font-medium text-2xl">Optimize  Home page</h1>
+                            <h1 class="mb-4 font-medium text-2xl title">Optimize Home page</h1>
                             <div class="bg-white p-4 rounded-xl text-base font-normal">
                                 <h1 class="opacity-50">Debug using Chrome DevTools, check for overlapping...</h1>
                             </div>
-                        </div>
+                        
                         <div class="flex pt-3 justify-between items-end">
                             <div>
                                 <p class="text-sm opacity-70 font-normal">Deadline</p>
                                 <h3 class="font-medium text-base text-[#00303C]">21 March 2025</h3>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button class="comBtn btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
-                     </div>
+                    </div>
 
                     <!-- card-4 -->
-                     <div class="p-6 rounded-xl bg-[#F4F7FF]">
-                        <div class="border-b border-dashed border-[#3752FD20] pb-3">
+                    <div class="p-6 rounded-xl bg-[#F4F7FF]">
+                        
                             <button class="btn mb-4 bg-white text-[#00303C]">Meta</button>
-                            <h1 class="mb-4 font-medium text-2xl">Add new emoji 🤲</h1>
+                            <h1 class="mb-4 font-medium text-2xl title">Add new emoji 🤲</h1>
                             <div class="bg-white p-4 rounded-xl text-base font-normal">
                                 <h1 class="opacity-50">Debug using Chrome DevTools, check for overlapping...</h1>
                             </div>
-                        </div>
+                    
                         <div class="flex pt-3 justify-between items-end">
                             <div>
                                 <p class="text-sm opacity-70 font-normal">Deadline</p>
                                 <h3 class="font-medium text-base text-[#00303C]">21 March 2025</h3>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button class="comBtn btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
-                     </div>
+                    </div>
 
                     <!-- card-5 -->
-                     <div class="p-6 rounded-xl bg-[#F4F7FF]">
-                        <div class="border-b border-dashed border-[#3752FD20] pb-3">
-                            <button class="btn mb-4 bg-white text-[#00303C]">Google LLC</button>
-                            <h1 class="mb-4 font-medium text-2xl">Integrate OpenAI API</h1>
-                            <div class="bg-white p-4 rounded-xl text-base font-normal">
-                                <h1 class="opacity-50">Debug using Chrome DevTools, check for overlapping...</h1>
-                            </div>
+                    <div class="p-6 rounded-xl bg-[#F4F7FF]">
+                        
+                        <button class="btn mb-4 bg-white text-[#00303C]">Google LLC</button>
+                        <h1 class="mb-4 font-medium text-2xl title">Integrate OpenAI API</h1>
+                        <div class="bg-white p-4 rounded-xl text-base font-normal">
+                            <h1 class="opacity-50">Debug using Chrome DevTools, check for overlapping...</h1>
                         </div>
+                      
                         <div class="flex pt-3 justify-between items-end">
                             <div>
                                 <p class="text-sm opacity-70 font-normal">Deadline</p>
                                 <h3 class="font-medium text-base text-[#00303C]">21 March 2025</h3>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button class="comBtn btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
-                     </div>
+                    </div>
 
                     <!-- card-6 -->
-                     <div class="p-6 rounded-xl bg-[#F4F7FF]">
-                        <div class="border-b border-dashed border-[#3752FD20] pb-3">
-                            <button class="btn mb-4 bg-white text-[#00303C]">Glassdoar</button>
-                            <h1 class="mb-4 font-medium text-2xl">Improve Job searching</h1>
-                            <div class="bg-white p-4 rounded-xl text-base font-normal">
-                                <h1 class="opacity-50">Debug using Chrome DevTools, check for overlapping...</h1>
-                            </div>
+                    <div class="p-6 rounded-xl bg-[#F4F7FF]">
+
+                        <button class="btn mb-4 bg-white text-[#00303C]">Glassdoar</button>
+                        <h1 class="mb-4 font-medium title text-2xl">Improve Job searching</h1>
+                        <div class="bg-white p-4 rounded-xl text-base font-normal">
+                            <p class="opacity-50">Debug using Chrome DevTools, check for overlapping...</p>
                         </div>
                         <div class="flex pt-3 justify-between items-end">
                             <div>
                                 <p class="text-sm opacity-70 font-normal">Deadline</p>
                                 <h3 class="font-medium text-base text-[#00303C]">21 March 2025</h3>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button class="comBtn btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
 
             <!-- History section -->
             <div class="bg-white rounded-xl w-[430px]">
-                <div class="flex flex-col gap-4 justify-center items-center border-b border-dashed border-[#3752FD20] py-6">
+                <div
+                    class="flex flex-col gap-4 justify-center items-center border-b border-dashed border-[#3752FD20] py-6">
                     <div class="flex justify-center items-center text-[#00303C] gap-4">
                         <img src="assets/activity.png" alt="">
                         <h3 class="font-medium text-xl">Activity Log</h3>
                     </div>
-                    <button class="btn bg-[#3752FD] text-white rounded-lg text-base">Clear History</button> 
+                    <button class="btn bg-[#3752FD] text-white rounded-lg text-base" id="clear">Clear History</button>
+                </div>
+
+                <div id="history" class="p-8 space-y-3 text-sm">
+
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Js -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
